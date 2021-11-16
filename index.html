@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
     <!--CSS Link -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"/>
 
     <title>Globe Trekker: A Better Way To Camp</title>
 </head>
@@ -118,6 +118,65 @@
     </div>
 
     <div class="container">
+        <div class="row row-content">
+            <div class="col-md-8 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/tent.jpg" alt="Breadcrumb Trail Campground" />
+                            <div class="carousel-caption">
+                                <h3>Trail Glamping</h3>
+                                <p class="d-none d-sm-block">Let us be your guide to this off-the-beaten-path,
+                                    hike-in-only campground.</p>
+                            </div>
+                        </div>
+
+                        <!-- The d-block and w-100 classes are Bootstrap display and sizing utility classes. They set the image display property to block and the image width property to 100%, which prevents the browser's default image alignment from interfering. -->
+
+                        <!-- ----- Section: CAROUSEL Images ------ -->
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/tentLake.jpg" alt="React Lake Campground" />
+                            <div class="carousel-caption">
+                                <h3>Lakeside Glamping</h3>
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this
+                                    campground on the shores of the pristine React Lake is a favorite for fly fishers.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/globe.jpg" alt="Chrome River Campground" />
+                            <div class="carousel-caption">
+                                <h3>Globe Glamping</h3>
+                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights aside the snowy mountains.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div class="row row-content align-items-center">
             <!-- This class will only apply to small viewports and up, and will align the text inside the h2 element to the right -->
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -125,31 +184,15 @@
             </div>
 
             <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/tent.jpg" class="d-block w-10" alt="Tent in Forest">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/tentLake.jpg" class="d-block w-10" alt="Tent by lake">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/globe.jpg" class="d-block w-10" alt="Globe tent">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
                 <div class="media">
-                    <!-- img-thumbnail class gives a border Image 340x240-->
-                    <!-- <img class="d-flex mr-3 img-thumbnail" src="img/tent.jpg"
-                        alt="Tent in Forest" /> -->
+                    <!-- img-thumbnail class gives a border -->
+                    <img class="d-flex mr-3 img-thumbnail" src="img/tent2.jpg" alt="Breadcrumb Trail" />
                     <!-- for the text add the media-body class -->
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <!-- hide elements on a xs screen applied the following classes: .d-none .d-sm-block -->
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave
+                            your
                             own reviews!</p>
                     </div>
                 </div>
@@ -194,9 +237,6 @@
 
         </div>
 
-        <!--  Task 2 -->
-        <!-- sm-6 & utility class mx-auto for this column div to horizontally center it. -->
-        <!-- apply the Bootstrap classes "form-group", "col-form-label", and "form-control" where appropriate within the form. -->
 
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
@@ -211,11 +251,11 @@
                                 <div class="col-sm-6 col-form-label">
                                     <label for="numCampers">Number of Campers</label>
                                 </div>
-                                <!-- FB Line 149 - Should have the "selected" boolean attribute.?? -->
+                             
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
-                                        <option>Select. . .</option>
-                                        <option>1</option>
+                                        <option disabled>Select. . .</option>
+                                        <option selected>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
@@ -295,11 +335,22 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Tooltip activated by adding JavaScript (in the form of jQuery) to the bottom of the page as follows: -->
+    <!-- set the carousel image cycle interval to 2000 ms upon load (the default is 5000 ms otherwise), and implement pause/play functionality via the jQuery click() -->
     <script>
         $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+            $(".carousel").carousel({ interval: 2000 });
+            $("#carouselButton").click(function () {
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
+            });
+        });
     </script>
 
 </body>

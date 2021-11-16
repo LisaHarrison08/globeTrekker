@@ -55,6 +55,26 @@ header h2 {
   background-color:#0b311e !important; 
 }
 
+/* Home Page */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  border: solid #795b92;
+}
+
+.carousel h3 {
+  color: #afa8b4;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
 /* About Page */
 a, a:hover {
   color: inherit;
