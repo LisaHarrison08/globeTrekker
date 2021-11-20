@@ -1,5 +1,5 @@
 //  set the carousel image cycle interval to 2000 ms upon load (the default is 5000 ms otherwise), and implement pause/play functionality via the jQuery click() 
-<script>
+{/* <script>
     $(function () {
         $(".carousel").carousel({ interval: 2000 });
     $("#carouselButton").click(function () {
@@ -14,4 +14,14 @@
                 }
             });
         });
+
+</script> */}
+
+// 
+<script>
+$(function () {
+        $("#reserveButton").onclick(function () {
+            //     action:
+            $("#reserveModal").modal("show");
+        })};
 </script>
